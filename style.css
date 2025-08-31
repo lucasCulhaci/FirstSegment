@@ -1,0 +1,81 @@
+:root {
+  --_greenTableHeaderBackground: #82b366;
+  --_greenTableDataBackground: #d5e8d4;
+  --_blueTableHeaderBackground: #6c8ebf;
+  --_blueTableDataBackground: #dae8fc;
+  --_orangeTableHeaderBackground: #d79b00;
+  --_orangeTableDataBackground: #ffe6cc;
+  --_redTableHeaderBackground: #b85450;
+  --_redTableDataBackground: #f8cecc;
+}
+
+.username {
+  text-align: center;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+a:: {
+  color: green;
+}
+
+/* TABLE */
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+/* TABLE ROW */
+tr {
+  max-height: 50px;
+}
+
+/* TABLE HEADER */
+
+th {
+  height: 50px;
+}
+th:first-child {
+  background-color: var(--_greenTableHeaderBackground);
+}
+
+th:nth-child(2) {
+  background-color: var(--_blueTableHeaderBackground);
+}
+
+th:nth-child(3) {
+  background-color: var(--_orangeTableHeaderBackground);
+}
+
+th:nth-child(4) {
+  background-color: var(--_redTableHeaderBackground);
+}
+
+/* TABLE DATA */
+td {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  height: 50px;
+  width: 300px;
+}
+
+td:first-child {
+  background-color: var(--_greenTableDataBackground);
+}
+
+td:nth-child(2) {
+  background-color: var(--_blueTableDataBackground);
+}
+
+td:nth-child(3) {
+  background-color: var(--_orangeTableDataBackground);
+}
+
+td:last-child {
+  background-color: var(--_redTableDataBackground);
+}
