@@ -7,6 +7,16 @@
   --_orangeTableDataBackground: #ffe6cc;
   --_redTableHeaderBackground: #b85450;
   --_redTableDataBackground: #f8cecc;
+  --_greenTableHeaderFinished: #1aff00;
+  --_yellowGameOfHonour: #faed00;
+}
+
+body {
+  background-color: black;
+}
+
+#gold {
+  background-color: var(--_yellowGameOfHonour);
 }
 
 .username {
@@ -15,12 +25,12 @@
 }
 
 a {
-  text-decoration: none;
-  color: red;
+  text-decoration: underline;
+  color: rgb(255, 0, 140);
 }
 
-a:: {
-  color: green;
+.spacer {
+  margin-top: 40px;
 }
 
 /* TABLE */
@@ -56,12 +66,24 @@ th:nth-child(4) {
 }
 
 /* TABLE DATA */
-td {
+.decisions > tr > td {
   text-align: center;
   margin: 0px;
   padding: 0px;
   height: 50px;
   width: 300px;
+}
+
+.finishedTableHead > tr > th {
+  background-color: var(--_greenTableHeaderFinished);
+}
+
+.finishedTableBody > tr > td {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  height: 50px;
+  width: 800px;
 }
 
 td:first-child {
@@ -76,6 +98,6 @@ td:nth-child(3) {
   background-color: var(--_orangeTableDataBackground);
 }
 
-td:last-child {
+td:nth-child(4) {
   background-color: var(--_redTableDataBackground);
 }
