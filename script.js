@@ -14,6 +14,7 @@ mightContinuePlayingThis.push('A Quiet Place');
 mightContinuePlayingThis.push('Coffee Talk');
 mightContinuePlayingThis.push('Blue Fire');
 mightContinuePlayingThis.push('South Park: The Fractured But Whole');
+mightContinuePlayingThis.push('The Last Spell');
 
 willOnlyPlayThisWithAGroup.push('My Little Universe');
 
