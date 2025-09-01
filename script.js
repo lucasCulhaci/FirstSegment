@@ -35,6 +35,7 @@ willNeverPlayThisAgain.push('Grand Theft Auto: Vice City');
 willNeverPlayThisAgain.push('Mario + Rabbids: Kingdom Battle');
 willNeverPlayThisAgain.push('Stray');
 willNeverPlayThisAgain.push('Aladdin');
+willNeverPlayThisAgain.push('Crash Bandicoot N. Sane Trilogy');
 
 // ALL THE INDEXES
 let allTheIndexes = [
