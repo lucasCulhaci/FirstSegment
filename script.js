@@ -27,6 +27,8 @@ willNeverPlayThisAgain.push('Casino Simulator');
 willNeverPlayThisAgain.push('Car Mechanic Sim 21');
 willNeverPlayThisAgain.push('Grand Theft Auto: Vice City');
 willNeverPlayThisAgain.push('Mario + Rabbids: Kingdom Battle');
+willNeverPlayThisAgain.push('Stray');
+willNeverPlayThisAgain.push('Aladdin');
 
 let allTheIndexes = [
   wouldFinishThisAlone.length,
