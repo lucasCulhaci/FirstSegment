@@ -6,6 +6,9 @@ let mightContinuePlayingThis = new Array();
 let willOnlyPlayThisWithAGroup = new Array();
 let willNeverPlayThisAgain = new Array();
 
+let finished = new Array();
+let finishedTopPick = new Array();
+
 // COLUMN - WOULD FINISH THIS ALONE
 wouldFinishThisAlone.push('The Midnight Walk');
 wouldFinishThisAlone.push('BioShock 1 Remastered');

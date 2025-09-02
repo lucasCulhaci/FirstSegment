@@ -8,15 +8,10 @@
   --_redTableHeaderBackground: #b85450;
   --_redTableDataBackground: #f8cecc;
   --_greenTableHeaderFinished: #1aff00;
-  --_yellowGameOfHonour: #faed00;
 }
 
 body {
   background-color: black;
-}
-
-#gold {
-  background-color: var(--_yellowGameOfHonour);
 }
 
 .username {
@@ -71,10 +66,10 @@ th:nth-child(4) {
   margin: 0px;
   padding: 0px;
   height: 50px;
-  width: 300px;
+  width: 20em;
 }
 
-.finishedTableHead > tr > th {
+.finishedTableHead > tr:nth-child(1) > th:nth-child(1) {
   background-color: var(--_greenTableHeaderFinished);
 }
 
@@ -83,7 +78,7 @@ th:nth-child(4) {
   margin: 0px;
   padding: 0px;
   height: 50px;
-  width: 800px;
+  width: 20em;
 }
 
 td:first-child {
