@@ -9,7 +9,6 @@ let willNeverPlayThisAgain = new Array();
 // COLUMN - WOULD FINISH THIS ALONE
 wouldFinishThisAlone.push('The Midnight Walk');
 wouldFinishThisAlone.push('BioShock 1 Remastered');
-wouldFinishThisAlone.push('The Last Spell');
 
 // COLUMN - MIGHT CONTINUE PLAYING THIS
 mightContinuePlayingThis.push('Warframe');
@@ -36,6 +35,7 @@ willNeverPlayThisAgain.push('Mario + Rabbids: Kingdom Battle');
 willNeverPlayThisAgain.push('Stray');
 willNeverPlayThisAgain.push('Aladdin');
 willNeverPlayThisAgain.push('Crash Bandicoot N. Sane Trilogy');
+willNeverPlayThisAgain.push('Tempest');
 
 // ALL THE INDEXES
 let allTheIndexes = [
