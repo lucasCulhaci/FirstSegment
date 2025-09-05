@@ -26,6 +26,7 @@ mightContinuePlayingThis.push('The Last Spell');
 
 // COLUMN - WILL ONLY PLAY THIS WITH A GROUP
 willOnlyPlayThisWithAGroup.push('My Little Universe');
+willOnlyPlayThisWithAGroup.push('League of Legends');
 
 // COLUMN - WILL NEVER PLAY THIS AGAIN
 willNeverPlayThisAgain.push('The Legend of Zelda: Breath of the Wild');
