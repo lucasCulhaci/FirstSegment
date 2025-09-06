@@ -14,6 +14,7 @@ let wouldntPlayThisAgain = new Array();
 wouldFinishThisAlone.push('The Midnight Walk');
 wouldFinishThisAlone.push('BioShock 1 Remastered');
 wouldFinishThisAlone.push('Hollow Knight: Silksong');
+wouldFinishThisAlone.push('Max Payne');
 
 // COLUMN - MIGHT CONTINUE PLAYING THIS
 mightContinuePlayingThis.push('Warframe');
