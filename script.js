@@ -47,6 +47,7 @@ willNeverPlayThisAgain.push('Aladdin');
 willNeverPlayThisAgain.push('Crash Bandicoot N. Sane Trilogy');
 willNeverPlayThisAgain.push('Tempest');
 willNeverPlayThisAgain.push('Bad Cheese');
+willNeverPlayThisAgain.push('Black');
 
 // COLUMN - MY TOP PICKS
 myTopPicks.push('Hollow Knight');
