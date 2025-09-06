@@ -25,6 +25,7 @@ mightContinuePlayingThis.push('Blue Fire');
 mightContinuePlayingThis.push('South Park: The Fractured But Whole');
 mightContinuePlayingThis.push('The Last Spell');
 mightContinuePlayingThis.push('Ultrakill');
+mightContinuePlayingThis.push('Mortal Sin');
 
 // COLUMN - WILL ONLY PLAY THIS WITH A GROUP
 willOnlyPlayThisWithAGroup.push('My Little Universe');
