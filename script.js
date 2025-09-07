@@ -49,6 +49,7 @@ willNeverPlayThisAgain.push('Tempest');
 willNeverPlayThisAgain.push('Bad Cheese');
 willNeverPlayThisAgain.push('Black');
 willNeverPlayThisAgain.push('Terarria');
+willNeverPlayThisAgain.push('Super Mario Galaxy');
 
 // COLUMN - MY TOP PICKS
 myTopPicks.push('Hollow Knight');

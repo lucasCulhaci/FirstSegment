@@ -10,8 +10,12 @@
   --_greenTableHeaderFinished: #1aff00;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: black;
+  text-align: center;
 }
 
 .username {
