@@ -5,10 +5,10 @@ let wouldFinishThisAlone = new Array();
 let mightContinuePlayingThis = new Array();
 let willOnlyPlayThisWithAGroup = new Array();
 let willNeverPlayThisAgain = new Array();
-
 let myTopPicks = new Array();
 let prettyGood = new Array();
 let wouldntPlayThisAgain = new Array();
+let finishedAnime = new Array();
 
 // COLUMN - WOULD FINISH THIS ALONE
 wouldFinishThisAlone.push('The Midnight Walk');
@@ -105,6 +105,20 @@ wouldntPlayThisAgain.push('Erica');
 wouldntPlayThisAgain.push('Sackboy: A Big Adventure');
 wouldntPlayThisAgain.push('Tekken 7');
 
+// COLUMN - FINISHED ANIME
+finishedAnime.push('Naruto');
+finishedAnime.push('Naruto: Shippuden');
+finishedAnime.push('Boruto: Naruto Next Generations');
+finishedAnime.push('Kakegurui');
+finishedAnime.push('Kakegurui xx');
+finishedAnime.push('Jujutsu Kaisen');
+finishedAnime.push('Jujutsu Kaisen Season 2');
+finishedAnime.push('Chainsaw Man');
+finishedAnime.push('Tokyo Ghoul Season 1');
+finishedAnime.push('Tokyo Ghoul √A Season 2');
+finishedAnime.push('Fullmetal Alchemist: Brotherhood');
+finishedAnime.push('Tsuredure Children');
+
 createTable(
   'tableBody',
   wouldFinishThisAlone,
@@ -112,6 +126,8 @@ createTable(
   willOnlyPlayThisWithAGroup,
   willNeverPlayThisAgain
 );
+
+createTable('anime', finishedAnime);
 
 createTable('tableBodyFinished', myTopPicks, prettyGood, wouldntPlayThisAgain);
 
