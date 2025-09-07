@@ -31,8 +31,16 @@
     <p>
       <a href="#tableForGamingFinished">[Finished] Games</a>
     </p>
+    <p>
+      <a href="#tableForAnime">[Tested] Anime</a>
+    </p>
+    <p>
+      <a href="#tableForAnimeFinished">[Finished] Anime</a>
+    </p>
 
     <!-- TABLE FOR GAMING -->
+
+    <h1>GAMES</h1>
 
     <div class="table spacer" id="tableForGaming">
       <table>
@@ -71,19 +79,44 @@
       </table>
     </div>
 
+    <!-- ANIME -->
+
     <h1>ANIME</h1>
 
-    <div class="table spacer">
+    <div class="table spacer" id="tableForAnime">
+      <table>
+        <thead>
+          <tr>
+            <!-- Green -->
+            <th>WOULD FINISH THIS ALONE</th>
+
+            <!-- Blue  -->
+            <th>MIGHT CONTINUE WATCHING THIS</th>
+
+            <!-- Orange -->
+            <th>WILL ONLY WATCH THIS WITH A GROUP</th>
+
+            <!-- Red -->
+            <th>WILL NEVER WATCH THIS AGAIN</th>
+          </tr>
+        </thead>
+        <tbody class="decisions" id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <div class="table spacer" id="tableForAnimeFinished">
       <table>
         <thead class="animeTableHead">
           <tr>
-            <th colspan="3">--- [ ANIME ] ---</th>
+            <th colspan="3">--- [ FINISHED ] ---</th>
           </tr>
           <tr>
-            <th>FINISHED</th>
+            <th>TOP PICK</th>
+            <th>PRETTY GOOD</th>
+            <th>WOULDN'T WATCH THIS AGAIN</th>
           </tr>
         </thead>
-        <tbody class="finishedTableBody" id="anime"></tbody>
+        <tbody class="finishedTableBody" id="animeFinished"></tbody>
       </table>
     </div>
 

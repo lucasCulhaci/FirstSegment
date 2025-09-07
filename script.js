@@ -1,135 +1,157 @@
 'use strict';
 
 // Array Declaration
-let wouldFinishThisAlone = new Array();
-let mightContinuePlayingThis = new Array();
-let willOnlyPlayThisWithAGroup = new Array();
-let willNeverPlayThisAgain = new Array();
-let myTopPicks = new Array();
-let prettyGood = new Array();
-let wouldntPlayThisAgain = new Array();
+let wouldFinishThisGame = new Array();
+let mightContinuePlayThisGame = new Array();
+let willOnlyPlayThisGameWithAGroup = new Array();
+let willNeverPlayThisGameAgain = new Array();
+let myTopPickGames = new Array();
+let prettyGoodGames = new Array();
+let wouldntPlayThisGameAgain = new Array();
+
+// Delafter
 let finishedAnime = new Array();
 
+let myTopPickAnime = new Array();
+let prettyGoodAnime = new Array();
+let wouldntWatchThisAnimeAgain = new Array();
+
 // COLUMN - WOULD FINISH THIS ALONE
-wouldFinishThisAlone.push('The Midnight Walk');
-wouldFinishThisAlone.push('BioShock 1 Remastered');
-wouldFinishThisAlone.push('Hollow Knight: Silksong');
-wouldFinishThisAlone.push('Max Payne');
-wouldFinishThisAlone.push('Watch Dogs');
+wouldFinishThisGame.push('The Midnight Walk');
+wouldFinishThisGame.push('BioShock 1 Remastered');
+wouldFinishThisGame.push('Hollow Knight: Silksong');
+wouldFinishThisGame.push('Max Payne');
+wouldFinishThisGame.push('Watch Dogs');
 
 // COLUMN - MIGHT CONTINUE PLAYING THIS
-mightContinuePlayingThis.push('Warframe');
-mightContinuePlayingThis.push('Undertale');
-mightContinuePlayingThis.push('A Quiet Place');
-mightContinuePlayingThis.push('Coffee Talk');
-mightContinuePlayingThis.push('Blue Fire');
-mightContinuePlayingThis.push('South Park: The Fractured But Whole');
-mightContinuePlayingThis.push('The Last Spell');
-mightContinuePlayingThis.push('Ultrakill');
-mightContinuePlayingThis.push('Mortal Sin');
-mightContinuePlayingThis.push('Hades');
+mightContinuePlayThisGame.push('Warframe');
+mightContinuePlayThisGame.push('Undertale');
+mightContinuePlayThisGame.push('A Quiet Place');
+mightContinuePlayThisGame.push('Coffee Talk');
+mightContinuePlayThisGame.push('Blue Fire');
+mightContinuePlayThisGame.push('South Park: The Fractured But Whole');
+mightContinuePlayThisGame.push('The Last Spell');
+mightContinuePlayThisGame.push('Ultrakill');
+mightContinuePlayThisGame.push('Mortal Sin');
+mightContinuePlayThisGame.push('Hades');
 
 // COLUMN - WILL ONLY PLAY THIS WITH A GROUP
-willOnlyPlayThisWithAGroup.push('My Little Universe');
-willOnlyPlayThisWithAGroup.push('League of Legends');
+willOnlyPlayThisGameWithAGroup.push('My Little Universe');
+willOnlyPlayThisGameWithAGroup.push('League of Legends');
 
 // COLUMN - WILL NEVER PLAY THIS AGAIN
-willNeverPlayThisAgain.push('The Legend of Zelda: Breath of the Wild');
-willNeverPlayThisAgain.push('Bloons TD 6');
-willNeverPlayThisAgain.push('Minecraft: Dungeons');
-willNeverPlayThisAgain.push('The Simpsons: Hit and Run');
-willNeverPlayThisAgain.push('Untitled Goose');
-willNeverPlayThisAgain.push('Casino Simulator');
-willNeverPlayThisAgain.push('Car Mechanic Sim 21');
-willNeverPlayThisAgain.push('Grand Theft Auto: Vice City');
-willNeverPlayThisAgain.push('Mario + Rabbids: Kingdom Battle');
-willNeverPlayThisAgain.push('Stray');
-willNeverPlayThisAgain.push('Aladdin');
-willNeverPlayThisAgain.push('Crash Bandicoot N. Sane Trilogy');
-willNeverPlayThisAgain.push('Tempest');
-willNeverPlayThisAgain.push('Bad Cheese');
-willNeverPlayThisAgain.push('Black');
-willNeverPlayThisAgain.push('Terarria');
-willNeverPlayThisAgain.push('Super Mario Galaxy');
+willNeverPlayThisGameAgain.push('The Legend of Zelda: Breath of the Wild');
+willNeverPlayThisGameAgain.push('Bloons TD 6');
+willNeverPlayThisGameAgain.push('Minecraft: Dungeons');
+willNeverPlayThisGameAgain.push('The Simpsons: Hit and Run');
+willNeverPlayThisGameAgain.push('Untitled Goose');
+willNeverPlayThisGameAgain.push('Casino Simulator');
+willNeverPlayThisGameAgain.push('Car Mechanic Sim 21');
+willNeverPlayThisGameAgain.push('Grand Theft Auto: Vice City');
+willNeverPlayThisGameAgain.push('Mario + Rabbids: Kingdom Battle');
+willNeverPlayThisGameAgain.push('Stray');
+willNeverPlayThisGameAgain.push('Aladdin');
+willNeverPlayThisGameAgain.push('Crash Bandicoot N. Sane Trilogy');
+willNeverPlayThisGameAgain.push('Tempest');
+willNeverPlayThisGameAgain.push('Bad Cheese');
+willNeverPlayThisGameAgain.push('Black');
+willNeverPlayThisGameAgain.push('Terarria');
+willNeverPlayThisGameAgain.push('Super Mario Galaxy');
 
 // COLUMN - MY TOP PICKS
-myTopPicks.push('Hollow Knight');
-myTopPicks.push('Cuphead');
-myTopPicks.push('The Last of Us Remastered');
-myTopPicks.push('The Last of Us II');
-myTopPicks.push('Until Dawn');
-myTopPicks.push('God of War III');
-myTopPicks.push("Astro's Playroom");
-myTopPicks.push('Jak 3');
-myTopPicks.push('Daxter');
-myTopPicks.push('Detroit Become Human');
-myTopPicks.push('The First Tree');
-myTopPicks.push('Portal');
-myTopPicks.push('Portal 2');
-myTopPicks.push('Inside');
-myTopPicks.push('High on Life');
-myTopPicks.push('South Park: The Stick of Truth');
+myTopPickGames.push('Hollow Knight');
+myTopPickGames.push('Cuphead');
+myTopPickGames.push('The Last of Us Remastered');
+myTopPickGames.push('The Last of Us II');
+myTopPickGames.push('Until Dawn');
+myTopPickGames.push('God of War III');
+myTopPickGames.push("Astro's Playroom");
+myTopPickGames.push('Jak 3');
+myTopPickGames.push('Daxter');
+myTopPickGames.push('Detroit Become Human');
+myTopPickGames.push('The First Tree');
+myTopPickGames.push('Portal');
+myTopPickGames.push('Portal 2');
+myTopPickGames.push('Inside');
+myTopPickGames.push('High on Life');
+myTopPickGames.push('South Park: The Stick of Truth');
 
 // COLUMN - PRETTY GOOD
-prettyGood.push('Rabi Ribi');
-prettyGood.push('Uncharted: Golden Abyss');
-prettyGood.push('Skate 3');
-prettyGood.push('Little Nightmares');
-prettyGood.push('Jak and Daxter: The Lost Frontier');
-prettyGood.push('Viewfinder');
-prettyGood.push('Infamous: Second Son');
-prettyGood.push('State of Mind');
-prettyGood.push('Buckshot Roulette');
-prettyGood.push('Ratchet: Deadlocked');
-prettyGood.push('Minecraft');
-prettyGood.push('Grand Theft Auto V');
-prettyGood.push('Ratchet & Clank: Rift Apart');
-prettyGood.push('Ratchet & Clank');
-prettyGood.push('Call of Duty: Advanced Warfare');
-prettyGood.push('Call of Duty: Ghost');
+prettyGoodGames.push('Rabi Ribi');
+prettyGoodGames.push('Uncharted: Golden Abyss');
+prettyGoodGames.push('Skate 3');
+prettyGoodGames.push('Little Nightmares');
+prettyGoodGames.push('Jak and Daxter: The Lost Frontier');
+prettyGoodGames.push('Viewfinder');
+prettyGoodGames.push('Infamous: Second Son');
+prettyGoodGames.push('State of Mind');
+prettyGoodGames.push('Buckshot Roulette');
+prettyGoodGames.push('Ratchet: Deadlocked');
+prettyGoodGames.push('Minecraft');
+prettyGoodGames.push('Grand Theft Auto V');
+prettyGoodGames.push('Ratchet & Clank: Rift Apart');
+prettyGoodGames.push('Ratchet & Clank');
+prettyGoodGames.push('Call of Duty: Advanced Warfare');
+prettyGoodGames.push('Call of Duty: Ghost');
 
 // COLUMN - WOULDN'T PLAY THIS AGAIN
-wouldntPlayThisAgain.push("Assassin's Creed");
-wouldntPlayThisAgain.push('Call of Duty: Black Ops: Declassified');
-wouldntPlayThisAgain.push('Sonic Forces');
-wouldntPlayThisAgain.push('New Super Mario Bros. U.');
-wouldntPlayThisAgain.push('Knack');
-wouldntPlayThisAgain.push('Pocket Mini Golf');
-wouldntPlayThisAgain.push('Goat Simulator');
-wouldntPlayThisAgain.push('Ratatouille');
-wouldntPlayThisAgain.push('PlayStation All-Stars');
-wouldntPlayThisAgain.push('Moto Rush GT');
-wouldntPlayThisAgain.push('Uncharted 4');
-wouldntPlayThisAgain.push('Nidhogg');
-wouldntPlayThisAgain.push('Erica');
-wouldntPlayThisAgain.push('Sackboy: A Big Adventure');
-wouldntPlayThisAgain.push('Tekken 7');
+wouldntPlayThisGameAgain.push("Assassin's Creed");
+wouldntPlayThisGameAgain.push('Call of Duty: Black Ops: Declassified');
+wouldntPlayThisGameAgain.push('Sonic Forces');
+wouldntPlayThisGameAgain.push('New Super Mario Bros. U.');
+wouldntPlayThisGameAgain.push('Knack');
+wouldntPlayThisGameAgain.push('Pocket Mini Golf');
+wouldntPlayThisGameAgain.push('Goat Simulator');
+wouldntPlayThisGameAgain.push('Ratatouille');
+wouldntPlayThisGameAgain.push('PlayStation All-Stars');
+wouldntPlayThisGameAgain.push('Moto Rush GT');
+wouldntPlayThisGameAgain.push('Uncharted 4');
+wouldntPlayThisGameAgain.push('Nidhogg');
+wouldntPlayThisGameAgain.push('Erica');
+wouldntPlayThisGameAgain.push('Sackboy: A Big Adventure');
+wouldntPlayThisGameAgain.push('Tekken 7');
 
-// COLUMN - FINISHED ANIME
-finishedAnime.push('Naruto');
-finishedAnime.push('Naruto: Shippuden');
-finishedAnime.push('Boruto: Naruto Next Generations');
-finishedAnime.push('Kakegurui');
-finishedAnime.push('Kakegurui xx');
-finishedAnime.push('Jujutsu Kaisen');
-finishedAnime.push('Jujutsu Kaisen Season 2');
-finishedAnime.push('Chainsaw Man');
-finishedAnime.push('Tokyo Ghoul Season 1');
-finishedAnime.push('Tokyo Ghoul √A Season 2');
-finishedAnime.push('Fullmetal Alchemist: Brotherhood');
-finishedAnime.push('Tsuredure Children');
+// COLUMN - TOP PICK ANIME
+myTopPickAnime.push('Naruto');
+myTopPickAnime.push('Naruto: Shippuden');
+myTopPickAnime.push('Kakegurui');
+myTopPickAnime.push('Kakegurui xx');
+myTopPickAnime.push('Jujutsu Kaisen');
+myTopPickAnime.push('Jujutsu Kaisen Season 2');
+myTopPickAnime.push('Chainsaw Man');
+myTopPickAnime.push('Tokyo Ghoul Season 1');
+
+// COLUMN - PRETTY GOOD ANIME
+prettyGoodAnime.push('Boruto: Naruto Next Generations');
+prettyGoodAnime.push('Tokyo Ghoul √A Season 2');
+prettyGoodAnime.push('Fullmetal Alchemist: Brotherhood');
+prettyGoodAnime.push('Ghost Stories');
+prettyGoodAnime.push('NARUTO Spin-Off: Rock Lee & His Ninja Pals');
+
+// COLUMN - WOULDN'T WATCH THIS ANIME AGAIN
+wouldntWatchThisAnimeAgain.push('Tsuredure Children');
 
 createTable(
   'tableBody',
-  wouldFinishThisAlone,
-  mightContinuePlayingThis,
-  willOnlyPlayThisWithAGroup,
-  willNeverPlayThisAgain
+  wouldFinishThisGame,
+  mightContinuePlayThisGame,
+  willOnlyPlayThisGameWithAGroup,
+  willNeverPlayThisGameAgain
 );
 
-createTable('anime', finishedAnime);
+createTable(
+  'animeFinished',
+  myTopPickAnime,
+  prettyGoodAnime,
+  wouldntWatchThisAnimeAgain
+);
 
-createTable('tableBodyFinished', myTopPicks, prettyGood, wouldntPlayThisAgain);
+createTable(
+  'tableBodyFinished',
+  myTopPickGames,
+  prettyGoodGames,
+  wouldntPlayThisGameAgain
+);
 
 function createTable(tableName, ...columns) {
   // Copy and sort columns
