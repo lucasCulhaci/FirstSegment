@@ -15,6 +15,7 @@ wouldFinishThisAlone.push('The Midnight Walk');
 wouldFinishThisAlone.push('BioShock 1 Remastered');
 wouldFinishThisAlone.push('Hollow Knight: Silksong');
 wouldFinishThisAlone.push('Max Payne');
+wouldFinishThisAlone.push('Watch Dogs');
 
 // COLUMN - MIGHT CONTINUE PLAYING THIS
 mightContinuePlayingThis.push('Warframe');
@@ -104,138 +105,31 @@ wouldntPlayThisAgain.push('Erica');
 wouldntPlayThisAgain.push('Sackboy: A Big Adventure');
 wouldntPlayThisAgain.push('Tekken 7');
 
-/// FIRST TABLE /// ---------------- /// ---------------- ///
+createTable(
+  'tableBody',
+  wouldFinishThisAlone,
+  mightContinuePlayingThis,
+  willOnlyPlayThisWithAGroup,
+  willNeverPlayThisAgain
+);
 
-if (true) {
-  // ALL THE INDEXES
-  let allTheIndexes = [
-    wouldFinishThisAlone.length,
-    mightContinuePlayingThis.length,
-    willOnlyPlayThisWithAGroup.length,
-    willNeverPlayThisAgain.length,
-  ];
-  let longestIndex = 0;
+createTable('tableBodyFinished', myTopPicks, prettyGood, wouldntPlayThisAgain);
 
-  // Longest length between all the Arrays
-  for (let index = 0; index < allTheIndexes.length; index++) {
-    if (allTheIndexes[index] > longestIndex) {
-      longestIndex = allTheIndexes[index];
-    }
-  }
+function createTable(tableName, ...columns) {
+  // Copy and sort columns
+  const allTheIndexes = columns.map((col) => [...col].sort());
 
-  // Sorting the Arrays
-  wouldFinishThisAlone.sort();
-  mightContinuePlayingThis.sort();
-  willOnlyPlayThisWithAGroup.sort();
-  willNeverPlayThisAgain.sort();
+  // Find the longest array length
+  const maxRows = Math.max(...allTheIndexes.map((arr) => arr.length));
 
-  const tableBody = document.getElementById('tableBody');
+  // Get the table body element
+  const tableBody = document.getElementById(tableName);
 
-  // Inserting data into the table
-  for (let row = 0; row < longestIndex; row++) {
-    let firstColumn = '';
-    let secondColumn = '';
-    let thirdColumn = '';
-    let fourthColumn = '';
-
-    if (wouldFinishThisAlone[row] === undefined) {
-      firstColumn = '';
-    } else {
-      firstColumn = wouldFinishThisAlone[row];
-    }
-
-    if (mightContinuePlayingThis[row] === undefined) {
-      secondColumn = '';
-    } else {
-      secondColumn = mightContinuePlayingThis[row];
-    }
-
-    if (willOnlyPlayThisWithAGroup[row] === undefined) {
-      thirdColumn = '';
-    } else {
-      thirdColumn = willOnlyPlayThisWithAGroup[row];
-    }
-
-    if (willNeverPlayThisAgain[row] === undefined) {
-      fourthColumn = ' ';
-    } else {
-      fourthColumn = willNeverPlayThisAgain[row];
-    }
-
-    tableBody.insertAdjacentHTML(
-      'beforeend',
-      `          
-          <tr>
-            <td>${firstColumn}</td>
-            <td>${secondColumn}</td>
-            <td>${thirdColumn}</td>
-            <td>${fourthColumn}</td>
-          </tr>`
-    );
+  // Build and insert rows
+  for (let row = 0; row < maxRows; row++) {
+    const rowHTML = `<tr>${allTheIndexes
+      .map((col) => `<td>${col[row] ?? ''}</td>`)
+      .join('')}</tr>`;
+    tableBody.insertAdjacentHTML('beforeend', rowHTML);
   }
 }
-
-/// ---------------- /// ---------------- /// FIRST TABLE ///
-
-/// SECOND TABLE /// ---------------- /// ---------------- ///
-
-if (true) {
-  // ALL THE INDEXES
-  let allTheIndexes = [
-    myTopPicks.length,
-    prettyGood.length,
-    wouldntPlayThisAgain.length,
-  ];
-  let longestIndex = 0;
-
-  // Longest length between all the Arrays
-  for (let index = 0; index < allTheIndexes.length; index++) {
-    if (allTheIndexes[index] > longestIndex) {
-      longestIndex = allTheIndexes[index];
-    }
-  }
-
-  // Sorting the Arrays
-  myTopPicks.sort();
-  prettyGood.sort();
-  wouldntPlayThisAgain.sort();
-
-  const tableBody = document.getElementById('tableBodyFinished');
-
-  // Inserting data into the table
-  for (let row = 0; row < longestIndex; row++) {
-    let firstColumn = '';
-    let secondColumn = '';
-    let thirdColumn = '';
-
-    if (myTopPicks[row] === undefined) {
-      firstColumn = '';
-    } else {
-      firstColumn = myTopPicks[row];
-    }
-
-    if (prettyGood[row] === undefined) {
-      secondColumn = '';
-    } else {
-      secondColumn = prettyGood[row];
-    }
-
-    if (wouldntPlayThisAgain[row] === undefined) {
-      thirdColumn = '';
-    } else {
-      thirdColumn = wouldntPlayThisAgain[row];
-    }
-
-    tableBody.insertAdjacentHTML(
-      'beforeend',
-      `          
-          <tr>
-            <td>${firstColumn}</td>
-            <td>${secondColumn}</td>
-            <td>${thirdColumn}</td>
-          </tr>`
-    );
-  }
-}
-
-/// ---------------- /// ---------------- /// SECOND TABLE ///
