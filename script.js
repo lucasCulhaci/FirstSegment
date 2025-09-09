@@ -8,13 +8,15 @@ let willNeverPlayThisGameAgain = new Array();
 let myTopPickGames = new Array();
 let prettyGoodGames = new Array();
 let wouldntPlayThisGameAgain = new Array();
-
-// Delafter
 let finishedAnime = new Array();
-
 let myTopPickAnime = new Array();
 let prettyGoodAnime = new Array();
 let wouldntWatchThisAnimeAgain = new Array();
+
+let wouldFinishThisAnime = new Array();
+let mightContinueWatchingThisAnime = new Array();
+let willOnlyWatchThisAnimeWithAGroup = new Array();
+let willNeverPlayThisAnimeAgain = new Array();
 
 // COLUMN - WOULD FINISH THIS ALONE
 wouldFinishThisGame.push('The Midnight Walk');
@@ -22,9 +24,10 @@ wouldFinishThisGame.push('BioShock 1 Remastered');
 wouldFinishThisGame.push('Hollow Knight: Silksong');
 wouldFinishThisGame.push('Max Payne');
 wouldFinishThisGame.push('Watch Dogs');
+wouldFinishThisGame.push('Warframe');
 
 // COLUMN - MIGHT CONTINUE PLAYING THIS
-mightContinuePlayThisGame.push('Warframe');
+
 mightContinuePlayThisGame.push('Undertale');
 mightContinuePlayThisGame.push('A Quiet Place');
 mightContinuePlayThisGame.push('Coffee Talk');
@@ -33,7 +36,6 @@ mightContinuePlayThisGame.push('South Park: The Fractured But Whole');
 mightContinuePlayThisGame.push('The Last Spell');
 mightContinuePlayThisGame.push('Ultrakill');
 mightContinuePlayThisGame.push('Mortal Sin');
-mightContinuePlayThisGame.push('Hades');
 
 // COLUMN - WILL ONLY PLAY THIS WITH A GROUP
 willOnlyPlayThisGameWithAGroup.push('My Little Universe');
@@ -57,6 +59,8 @@ willNeverPlayThisGameAgain.push('Bad Cheese');
 willNeverPlayThisGameAgain.push('Black');
 willNeverPlayThisGameAgain.push('Terarria');
 willNeverPlayThisGameAgain.push('Super Mario Galaxy');
+willNeverPlayThisGameAgain.push('Skul: The Hero Slayer');
+willNeverPlayThisGameAgain.push('Hades');
 
 // COLUMN - MY TOP PICKS
 myTopPickGames.push('Hollow Knight');
@@ -111,6 +115,9 @@ wouldntPlayThisGameAgain.push('Erica');
 wouldntPlayThisGameAgain.push('Sackboy: A Big Adventure');
 wouldntPlayThisGameAgain.push('Tekken 7');
 
+// COLUMN - WILL NEVER WATCH THIS ANIME AGAIN
+willNeverPlayThisAnimeAgain.push('Dragon Ball');
+
 // COLUMN - TOP PICK ANIME
 myTopPickAnime.push('Naruto');
 myTopPickAnime.push('Naruto: Shippuden');
@@ -131,6 +138,7 @@ prettyGoodAnime.push('NARUTO Spin-Off: Rock Lee & His Ninja Pals');
 // COLUMN - WOULDN'T WATCH THIS ANIME AGAIN
 wouldntWatchThisAnimeAgain.push('Tsuredure Children');
 
+// TABLE - GAMES
 createTable(
   'tableBody',
   wouldFinishThisGame,
@@ -140,17 +148,32 @@ createTable(
 );
 
 createTable(
-  'animeFinished',
-  myTopPickAnime,
-  prettyGoodAnime,
-  wouldntWatchThisAnimeAgain
-);
-
-createTable(
   'tableBodyFinished',
   myTopPickGames,
   prettyGoodGames,
   wouldntPlayThisGameAgain
+);
+
+// TABLE - ANIME
+
+// let wouldFinishThisAnime = new Array();
+// let mightContinueWatchingThisAnime = new Array();
+// let willOnlyWatchThisAnimeWithAGroup = new Array();
+// let willNeverPlayThisAnimeAgain = new Array();
+
+createTable(
+  'tableForAnime',
+  wouldFinishThisAnime,
+  mightContinueWatchingThisAnime,
+  willOnlyWatchThisAnimeWithAGroup,
+  willNeverPlayThisAnimeAgain
+);
+
+createTable(
+  'animeFinished',
+  myTopPickAnime,
+  prettyGoodAnime,
+  wouldntWatchThisAnimeAgain
 );
 
 function createTable(tableName, ...columns) {
