@@ -1,24 +1,40 @@
 'use strict';
 
 // Array Declaration
+
+// [GAME] MEMBER VARIABLES
 let wouldFinishThisGame = new Array();
 let mightContinuePlayThisGame = new Array();
 let willOnlyPlayThisGameWithAGroup = new Array();
 let willNeverPlayThisGameAgain = new Array();
+
 let myTopPickGames = new Array();
 let prettyGoodGames = new Array();
 let wouldntPlayThisGameAgain = new Array();
-let finishedAnime = new Array();
-let myTopPickAnime = new Array();
-let prettyGoodAnime = new Array();
-let wouldntWatchThisAnimeAgain = new Array();
 
+// [ANIME] MEMBER VARIABLES
 let wouldFinishThisAnime = new Array();
 let mightContinueWatchingThisAnime = new Array();
 let willOnlyWatchThisAnimeWithAGroup = new Array();
 let willNeverPlayThisAnimeAgain = new Array();
 
-// COLUMN - WOULD FINISH THIS ALONE
+let finishedAnime = new Array();
+let myTopPickAnime = new Array();
+let prettyGoodAnime = new Array();
+let wouldntWatchThisAnimeAgain = new Array();
+
+// [CARTOON] MEMBER VARIABLES
+
+let wouldFinishThisCartoon = new Array();
+let mightContinueWatchingThisCartoon = new Array();
+let willOnlyWatchThisCartoonWithAGroup = new Array();
+let willNeverWatchThisCartoonAgain = new Array();
+
+let myTopPickCartoons = new Array();
+let prettyGoodCartoons = new Array();
+let wouldntWatchThisCartoonAgain = new Array();
+
+// [GAME] COLUMN - WOULD FINISH THIS ALONE
 wouldFinishThisGame.push('The Midnight Walk');
 wouldFinishThisGame.push('BioShock 1 Remastered');
 wouldFinishThisGame.push('Hollow Knight: Silksong');
@@ -26,7 +42,7 @@ wouldFinishThisGame.push('Max Payne');
 wouldFinishThisGame.push('Watch Dogs');
 wouldFinishThisGame.push('Warframe');
 
-// COLUMN - MIGHT CONTINUE PLAYING THIS
+// [GAME] COLUMN - MIGHT CONTINUE PLAYING THIS
 
 mightContinuePlayThisGame.push('Undertale');
 mightContinuePlayThisGame.push('A Quiet Place');
@@ -37,11 +53,11 @@ mightContinuePlayThisGame.push('The Last Spell');
 mightContinuePlayThisGame.push('Ultrakill');
 mightContinuePlayThisGame.push('Mortal Sin');
 
-// COLUMN - WILL ONLY PLAY THIS WITH A GROUP
+// [GAME] COLUMN - WILL ONLY PLAY THIS WITH A GROUP
 willOnlyPlayThisGameWithAGroup.push('My Little Universe');
 willOnlyPlayThisGameWithAGroup.push('League of Legends');
 
-// COLUMN - WILL NEVER PLAY THIS AGAIN
+// [GAME] COLUMN - WILL NEVER PLAY THIS AGAIN
 willNeverPlayThisGameAgain.push('The Legend of Zelda: Breath of the Wild');
 willNeverPlayThisGameAgain.push('Bloons TD 6');
 willNeverPlayThisGameAgain.push('Minecraft: Dungeons');
@@ -62,7 +78,7 @@ willNeverPlayThisGameAgain.push('Super Mario Galaxy');
 willNeverPlayThisGameAgain.push('Skul: The Hero Slayer');
 willNeverPlayThisGameAgain.push('Hades');
 
-// COLUMN - MY TOP PICKS
+// [GAME] COLUMN - MY TOP PICKS
 myTopPickGames.push('Hollow Knight');
 myTopPickGames.push('Cuphead');
 myTopPickGames.push('The Last of Us Remastered');
@@ -80,7 +96,7 @@ myTopPickGames.push('Inside');
 myTopPickGames.push('High on Life');
 myTopPickGames.push('South Park: The Stick of Truth');
 
-// COLUMN - PRETTY GOOD
+// [GAME] COLUMN - PRETTY GOOD
 prettyGoodGames.push('Rabi Ribi');
 prettyGoodGames.push('Uncharted: Golden Abyss');
 prettyGoodGames.push('Skate 3');
@@ -98,7 +114,7 @@ prettyGoodGames.push('Ratchet & Clank');
 prettyGoodGames.push('Call of Duty: Advanced Warfare');
 prettyGoodGames.push('Call of Duty: Ghost');
 
-// COLUMN - WOULDN'T PLAY THIS AGAIN
+// [GAME] COLUMN - WOULDN'T PLAY THIS AGAIN
 wouldntPlayThisGameAgain.push("Assassin's Creed");
 wouldntPlayThisGameAgain.push('Call of Duty: Black Ops: Declassified');
 wouldntPlayThisGameAgain.push('Sonic Forces');
@@ -114,11 +130,12 @@ wouldntPlayThisGameAgain.push('Nidhogg');
 wouldntPlayThisGameAgain.push('Erica');
 wouldntPlayThisGameAgain.push('Sackboy: A Big Adventure');
 wouldntPlayThisGameAgain.push('Tekken 7');
+wouldntPlayThisGameAgain.push('Worms Reloaded');
 
-// COLUMN - WILL NEVER WATCH THIS ANIME AGAIN
+// [ANIME] COLUMN - WILL NEVER WATCH THIS ANIME AGAIN
 willNeverPlayThisAnimeAgain.push('Dragon Ball');
 
-// COLUMN - TOP PICK ANIME
+// [ANIME] COLUMN - TOP PICK ANIME
 myTopPickAnime.push('Naruto');
 myTopPickAnime.push('Naruto: Shippuden');
 myTopPickAnime.push('Kakegurui');
@@ -128,19 +145,25 @@ myTopPickAnime.push('Jujutsu Kaisen Season 2');
 myTopPickAnime.push('Chainsaw Man');
 myTopPickAnime.push('Tokyo Ghoul Season 1');
 
-// COLUMN - PRETTY GOOD ANIME
+// [ANIME] COLUMN - PRETTY GOOD ANIME
 prettyGoodAnime.push('Boruto: Naruto Next Generations');
 prettyGoodAnime.push('Tokyo Ghoul √A Season 2');
 prettyGoodAnime.push('Fullmetal Alchemist: Brotherhood');
 prettyGoodAnime.push('Ghost Stories');
 prettyGoodAnime.push('NARUTO Spin-Off: Rock Lee & His Ninja Pals');
 
-// COLUMN - WOULDN'T WATCH THIS ANIME AGAIN
+// [ANIME] COLUMN - WOULDN'T WATCH THIS ANIME AGAIN
 wouldntWatchThisAnimeAgain.push('Tsuredure Children');
+
+// [CARTOON] COLUMN - WOULD FINISH THIS ALONE
+wouldFinishThisCartoon.push('Boondocks');
+// [CARTOON] COLUMN - MY TOP PICKS
+myTopPickCartoons.push('South Park, Season[3 - 27]');
+myTopPickCartoons.push('Regular Show, Season[1 - 8]');
 
 // TABLE - GAMES
 createTable(
-  'tableBody',
+  'tableForGamesTested',
   wouldFinishThisGame,
   mightContinuePlayThisGame,
   willOnlyPlayThisGameWithAGroup,
@@ -148,7 +171,7 @@ createTable(
 );
 
 createTable(
-  'tableBodyFinished',
+  'tableForGamesFinished',
   myTopPickGames,
   prettyGoodGames,
   wouldntPlayThisGameAgain
@@ -156,13 +179,8 @@ createTable(
 
 // TABLE - ANIME
 
-// let wouldFinishThisAnime = new Array();
-// let mightContinueWatchingThisAnime = new Array();
-// let willOnlyWatchThisAnimeWithAGroup = new Array();
-// let willNeverPlayThisAnimeAgain = new Array();
-
 createTable(
-  'tableForAnime',
+  'tableForAnimeTested',
   wouldFinishThisAnime,
   mightContinueWatchingThisAnime,
   willOnlyWatchThisAnimeWithAGroup,
@@ -170,10 +188,25 @@ createTable(
 );
 
 createTable(
-  'animeFinished',
+  'tableForAnimeFinished',
   myTopPickAnime,
   prettyGoodAnime,
   wouldntWatchThisAnimeAgain
+);
+
+createTable(
+  'tableForCartoonTested',
+  wouldFinishThisCartoon,
+  mightContinueWatchingThisCartoon,
+  willOnlyWatchThisCartoonWithAGroup,
+  willNeverWatchThisCartoonAgain
+);
+
+createTable(
+  'tableForCartoonFinished',
+  myTopPickCartoons,
+  prettyGoodCartoons,
+  wouldntWatchThisCartoonAgain
 );
 
 function createTable(tableName, ...columns) {

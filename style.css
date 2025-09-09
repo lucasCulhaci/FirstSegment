@@ -17,7 +17,7 @@ html {
 
 body {
   text-align: center;
-  background-color: black;
+  animation: backgroundColourFade 30s infinite;
 }
 
 h1 {
@@ -33,7 +33,11 @@ h1 {
 
 a {
   text-decoration: underline;
-  color: rgb(255, 0, 140);
+  color: rgb(255, 213, 236);
+}
+
+a:hover {
+  color: rgb(255, 143, 205);
 }
 
 .spacer {
@@ -73,19 +77,12 @@ th:nth-child(4) {
 }
 
 /* TABLE DATA */
-.decisions > tr > td {
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-  height: 50px;
-  width: 20em;
-}
 
 .finishedTableHead > tr:nth-child(1) > th:nth-child(1) {
   background-color: var(--_greenTableHeaderFinished);
 }
 
-.finishedTableBody > tr > td {
+.tableBody > tr > td {
   text-align: center;
   margin: 0px;
   padding: 0px;
@@ -119,4 +116,27 @@ td:nth-child(4) {
   padding: 0px;
   height: 50px;
   width: 20em;
+}
+
+/* KEYFRAMES */
+
+@keyframes backgroundColourFade {
+  0% {
+    background-color: #3e0020;
+  }
+  20% {
+    background-color: #21003e;
+  }
+  40% {
+    background-color: #00083e;
+  }
+  60% {
+    background-color: #003b3e;
+  }
+  80% {
+    background-color: #3e3900;
+  }
+  100% {
+    background-color: #3e0a00;
+  }
 }
