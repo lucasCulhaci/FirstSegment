@@ -77,6 +77,8 @@ willNeverPlayThisGameAgain.push('Terarria');
 willNeverPlayThisGameAgain.push('Super Mario Galaxy');
 willNeverPlayThisGameAgain.push('Skul: The Hero Slayer');
 willNeverPlayThisGameAgain.push('Hades');
+willNeverPlayThisGameAgain.push('Worms Reloaded');
+willNeverPlayThisGameAgain.push('Apex Legends');
 
 // [GAME] COLUMN - MY TOP PICKS
 myTopPickGames.push('Hollow Knight');
@@ -130,7 +132,6 @@ wouldntPlayThisGameAgain.push('Nidhogg');
 wouldntPlayThisGameAgain.push('Erica');
 wouldntPlayThisGameAgain.push('Sackboy: A Big Adventure');
 wouldntPlayThisGameAgain.push('Tekken 7');
-wouldntPlayThisGameAgain.push('Worms Reloaded');
 
 // [ANIME] COLUMN - WILL NEVER WATCH THIS ANIME AGAIN
 willNeverPlayThisAnimeAgain.push('Dragon Ball');
